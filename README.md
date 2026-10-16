@@ -159,4 +159,6 @@ English and Spanish. Translations are very welcome.
 
 If you're plural and something here feels wrong, missing or uncomfortable, we really want to hear it. This mod is for you, and it should feel like it.
 
+Contact us at [**Discord**](https://discord.gg/YHqMTRYAMT), [**Twitter**](https://twitter.com/RuDaHee), or [**Github**](https://github.com/SteelCodeTeam/headmates) if you have any questions or feedback.
+
 Made with care by **RuDaHee**. Free and open source under the **GPL-3.0** license.
