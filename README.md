@@ -1,4 +1,4 @@
-![1200×400](https://placehold.co/1200x400/png)
+![1200×400](images/headmatesbanner_.png)
 
 # HeadMates
 
@@ -6,7 +6,7 @@
 
 HeadMates is a Fabric and NeoForge mod for **people with DID, OSDD and other plural experiences**. Each alter in your system can play as themselves: their own name, color, pronouns and skin, and their own inventory, progress and settings. They all share the same Minecraft account and the same worlds.
 
-![1200×60](https://placehold.co/1200x60/png)
+![1200×60](images/separador.png)
 
 ## Why a mod like this matters
 
@@ -25,7 +25,7 @@ We use words like *alter*, *system*, *headmate* and *fronting* because they're c
 
 > HeadMates is a game mod, not a medical or therapeutic tool. It's meant to make play a little easier and kinder, alongside whatever support you already have.
 
-![1200×60](https://placehold.co/1200x60/png)
+![1200×60](images/separador.png)
 
 ## Features
 
@@ -105,7 +105,7 @@ Many systems include younger alters. On public servers with strangers, that matt
 
 Both can be changed in Options → Controls → HeadMates.
 
-![1200×60](https://placehold.co/1200x60/png)
+![1200×60](images/separador.png)
 
 ## Privacy
 
@@ -114,7 +114,7 @@ Both can be changed in Options → Controls → HeadMates.
 - The only optional connection is copying a skin by username, which asks Mojang's public API.
 - On a server with HeadMates, the server only receives what's needed to show your alter to others: name, color, pronouns, system name and skin. Skins are kept in memory and forgotten when you leave.
 
-![1200×60](https://placehold.co/1200x60/png)
+![1200×60](images/separador.png)
 
 ## Limitations
 
@@ -124,7 +124,7 @@ Both can be changed in Options → Controls → HeadMates.
 - Config files of other mods are shared by all alters.
 - Forgotten passcodes can't be recovered yet. Please keep them somewhere safe.
 
-![1200×60](https://placehold.co/1200x60/png)
+![1200×60](images/separador.png)
 
 ## Requirements
 
@@ -134,7 +134,7 @@ Both can be changed in Options → Controls → HeadMates.
 - No other dependencies. On Fabric, the few Fabric API modules it needs are bundled inside the jar.
 - Install it on the **client**, and on the **server** if you want everyone's alters to be shared there.
 
-![1200×60](https://placehold.co/1200x60/png)
+![1200×60](images/separador.png)
 
 ## Frequently asked questions
 
@@ -153,7 +153,7 @@ Yes. You'll see your alter's name, color and skin on your own screen, but the se
 **What languages does it support?**  
 English and Spanish. Translations are very welcome.
 
-![1200×60](https://placehold.co/1200x60/png)
+![1200×60](images/separador.png)
 
 ## Feedback
 
