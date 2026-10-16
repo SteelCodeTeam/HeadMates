@@ -1,0 +1,61 @@
+plugins {
+    id 'com.github.johnrengelman.shadow'
+}
+
+architectury {
+    platformSetupLoomIde()
+    fabric()
+}
+
+configurations {
+    common {
+        canBeResolved = true
+        canBeConsumed = false
+    }
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    developmentFabric.extendsFrom common
+
+    shadowBundle {
+        canBeResolved = true
+        canBeConsumed = false
+    }
+}
+
+dependencies {
+    modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
+
+    // Módulos de Fabric API que hacen falta: carga de assets (traducciones, icono) y red.
+    // Se incluyen dentro del jar (jar-in-jar), así que no hace falta instalar Fabric API aparte.
+    include(modImplementation("net.fabricmc.fabric-api:fabric-api-base:$rootProject.fabric_api_base_version"))
+    include(modImplementation("net.fabricmc.fabric-api:fabric-resource-loader-v0:$rootProject.fabric_resource_loader_version"))
+    include(modImplementation("net.fabricmc.fabric-api:fabric-networking-api-v1:$rootProject.fabric_networking_version"))
+
+    common(project(path: ':common', configuration: 'namedElements')) { transitive false }
+    shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') {
+        expand version: project.version
+    }
+}
+
+shadowJar {
+    configurations = [project.configurations.shadowBundle]
+    archiveClassifier = 'dev-shadow'
+}
+
+remapJar {
+    input.set shadowJar.archiveFile
+}
+
+// El servidor de desarrollo usa su propia carpeta para no pisar la del cliente.
+loom {
+    runs {
+        server {
+            runDir 'run-server'
+        }
+    }
+}

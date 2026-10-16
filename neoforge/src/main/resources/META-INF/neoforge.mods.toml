@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "GPL-3.0"
+
+[[mods]]
+modId = "headmate"
+version = "${version}"
+displayName = "HeadMates"
+authors = "Ruben from SteelCodeTeam"
+description = '''
+Minecraft 1.21.1 mod (Fabric & NeoForge) for DID, OSDD and plural systems.
+
+Each alter gets their own profile: name, pronouns, skin, inventory, progress and settings. Alter switcher, system diary and multiplayer support.
+
+The artwork was created by Delia Stuven.
+'''
+logoFile = "assets/headmate/icon.png"
+
+[[dependencies.headmate]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.headmate]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "headmate.mixins.json"

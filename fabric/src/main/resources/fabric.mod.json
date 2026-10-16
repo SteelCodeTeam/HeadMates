@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "headmate",
+  "version": "${version}",
+  "name": "HeadMates",
+  "description": "Every alter in your plural system plays as themselves: their own name, colour, pronouns, skin, inventory, progress and settings. Made for DID/OSDD and plural systems.",
+  "authors": [
+    "RuDaHee"
+  ],
+  "contact": {},
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/headmate/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "es.rudahee.headmate.fabric.HeadMateFabric"
+    ],
+    "client": [
+      "es.rudahee.headmate.fabric.HeadMateFabricClient"
+    ]
+  },
+  "mixins": [
+    "headmate.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "fabric-resource-loader-v0": "*",
+    "fabric-networking-api-v1": "*",
+    "java": ">=21"
+  }
+}

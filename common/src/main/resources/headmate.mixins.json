@@ -1,0 +1,30 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "es.rudahee.headmate.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CommandsMixin",
+    "MinecraftServerMixin",
+    "PlayerListMixin",
+    "PlayerMixin",
+    "ServerGamePacketListenerImplMixin",
+    "ServerPlayerMixin"
+  ],
+  "client": [
+    "client.MinecraftMixin",
+    "client.OptionsMixin",
+    "client.PauseScreenMixin",
+    "client.ChatListenerMixin",
+    "client.ClientPacketListenerMixin",
+    "client.ConnectScreenMixin",
+    "client.KeyMappingAccessor",
+    "client.CreateWorldScreenMixin",
+    "client.PlayerInfoMixin",
+    "client.TitleScreenMixin",
+    "client.WorldOpenFlowsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,14 @@
+.gradle/
+build/
+out/
+run/
+*/run/
+*/run-server/
+.idea/
+*.iml
+*.ipr
+*.iws
+.architectury-transformer/
+*/build/
+*/.gradle/
+

@@ -1,0 +1,12 @@
+architectury {
+    common rootProject.enabled_platforms.split(',')
+}
+
+dependencies {
+    // Fabric Loader solo aporta las clases de Mixin al compilar common;
+    // no se usa ninguna API de Fabric en este módulo.
+    modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
+
+    // MixinExtras viene incluido en Fabric Loader (>=0.15) y en NeoForge.
+    compileOnly annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1")
+}
