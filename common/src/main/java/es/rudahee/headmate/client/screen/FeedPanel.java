@@ -90,7 +90,7 @@ final class FeedPanel extends AbstractWidget {
             Item item = entry.item;
             graphics.fill(getX() + 2, top + 2, getX() + 3, top + entry.height - 2, 0xFF000000 | item.color());
             graphics.fill(getX() + 6, top + 2, getX() + 19, top + 15, 0xFF000000 | item.color());
-            PlayerFaceRenderer.draw(graphics, item.face(), getX() + 7, top + 3, 11);
+            PlayerFaceRenderer.draw(graphics, item.face(), getX() + 7, top + 3, 11, true, false, -1);
             graphics.drawString(font, item.header(), getX() + 24, top + 4, 0xFFFFFF);
             if (item.onDelete() != null) {
                 boolean hover = mouseX >= getX() + width - 14 && mouseX <= getX() + width - 2 && mouseY >= top + 2 && mouseY <= top + 12;

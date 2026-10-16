@@ -406,7 +406,7 @@ public final class AlterEditScreen extends Screen {
         int left = cx - 160;
         int right = cx - 40;
         graphics.fill(left - 2, TOP - 2, left + 50, TOP + 50, 0xFF000000 | color);
-        PlayerFaceRenderer.draw(graphics, shownTexture(), left, TOP, 48);
+        PlayerFaceRenderer.draw(graphics, shownTexture(), left, TOP, 48, true, false, -1);
         String sourceKey = switch (skinAction) {
             case REPLACE -> "headmate.skin.source.new";
             case REMOVE -> "headmate.skin.source.account";

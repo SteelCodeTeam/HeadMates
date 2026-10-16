@@ -70,14 +70,14 @@ public final class SkinImages {
     private static void notchTransparencyHack(NativeImage image, int x0, int y0, int x1, int y1) {
         for (int x = x0; x < x1; x++) {
             for (int y = y0; y < y1; y++) {
-                if ((image.getPixelRGBA(x, y) >> 24 & 0xFF) < 128) {
+                if ((image.getPixel(x, y) >> 24 & 0xFF) < 128) {
                     return;
                 }
             }
         }
         for (int x = x0; x < x1; x++) {
             for (int y = y0; y < y1; y++) {
-                image.setPixelRGBA(x, y, image.getPixelRGBA(x, y) & 0xFFFFFF);
+                image.setPixel(x, y, image.getPixel(x, y) & 0xFFFFFF);
             }
         }
     }
@@ -85,7 +85,7 @@ public final class SkinImages {
     private static void setNoAlpha(NativeImage image, int x0, int y0, int x1, int y1) {
         for (int x = x0; x < x1; x++) {
             for (int y = y0; y < y1; y++) {
-                image.setPixelRGBA(x, y, image.getPixelRGBA(x, y) | 0xFF000000);
+                image.setPixel(x, y, image.getPixel(x, y) | 0xFF000000);
             }
         }
     }

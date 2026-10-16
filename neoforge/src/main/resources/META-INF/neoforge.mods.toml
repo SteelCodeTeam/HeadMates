@@ -19,14 +19,14 @@ logoFile = "assets/headmate/icon.png"
 [[dependencies.headmate]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21.1,)"
+versionRange = "[21.2,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.headmate]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.1,1.21.2)"
+versionRange = "[1.21.2,1.21.12)"
 ordering = "NONE"
 side = "BOTH"
 

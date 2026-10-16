@@ -88,7 +88,7 @@ final class SystemDeleteScreen extends Screen {
         explanation.renderCentered(graphics, cx, y - 62);
         graphics.drawCenteredString(font, Component.translatable("headmate.system.delete.step", index + 1, alters.size()),
                 cx, y - 34, 0xA0A0A0);
-        PlayerFaceRenderer.draw(graphics, AlterSkins.faceTexture(current), cx - 40, y - 20, 16);
+        PlayerFaceRenderer.draw(graphics, AlterSkins.faceTexture(current), cx - 40, y - 20, 16, true, false, -1);
         graphics.drawString(font, AlterListWidget.nameWithPronouns(current), cx - 18, y - 16, 0xFFFFFF);
         if (error != null) {
             graphics.drawCenteredString(font, error, cx, y + 32, 0xFF5555);

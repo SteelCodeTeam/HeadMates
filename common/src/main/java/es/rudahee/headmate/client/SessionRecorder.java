@@ -26,7 +26,7 @@ public final class SessionRecorder {
             Component detail = last.exitNote != null && !last.exitNote.isBlank()
                     ? Component.translatable("headmate.toast.last_note", who, when)
                     : Component.translatable("headmate.toast.last", who, when);
-            SystemToast.add(mc.getToasts(), SystemToast.SystemToastId.PERIODIC_NOTIFICATION,
+            SystemToast.add(mc.getToastManager(), SystemToast.SystemToastId.PERIODIC_NOTIFICATION,
                     Component.translatable("headmate.toast.last_title"), detail);
         }
         AlterProfile minor = Protection.activeMinor();

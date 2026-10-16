@@ -34,7 +34,7 @@ public abstract class ClientPacketListenerMixin {
         }
         ClientState.setVanillaServer(true);
         RemoteAlters.put(mc.getUser().getProfileId(), identity);
-        SystemToast.add(mc.getToasts(), SystemToast.SystemToastId.PERIODIC_NOTIFICATION,
+        SystemToast.add(mc.getToastManager(), SystemToast.SystemToastId.PERIODIC_NOTIFICATION,
                 Component.translatable("headmate.net.vanilla_server.title"),
                 Component.translatable("headmate.net.vanilla_server.short"));
         mc.gui.getChat().addMessage(Component.translatable("headmate.net.vanilla_server.message",

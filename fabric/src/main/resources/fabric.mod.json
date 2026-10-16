@@ -3,12 +3,12 @@
   "id": "headmate",
   "version": "${version}",
   "name": "HeadMates",
-  "description": "Every alter in your plural system plays as themselves: their own name, colour, pronouns, skin, inventory, progress and settings. Made for DID/OSDD and plural systems.",
+  "description": "Minecraft 1.21.1 mod (Fabric & NeoForge) for DID, OSDD and plural systems.\n\nEach alter gets their own profile: name, pronouns, skin, inventory, progress and settings. Alter switcher, system diary and multiplayer support.\n\nThe artwork was created by Delia Stuven.",
   "authors": [
     "RuDaHee"
   ],
   "contact": {},
-  "license": "GPL-3.0-or-later",
+  "license": "GPL-3.0",
   "icon": "assets/headmate/icon.png",
   "environment": "*",
   "entrypoints": {
@@ -24,7 +24,7 @@
   ],
   "depends": {
     "fabricloader": ">=0.16.0",
-    "minecraft": "~1.21.1",
+    "minecraft": "~1.21.2",
     "fabric-resource-loader-v0": "*",
     "fabric-networking-api-v1": "*",
     "java": ">=21"

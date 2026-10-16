@@ -4,7 +4,7 @@ import es.rudahee.headmate.client.WorldEntryGate;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.worldselection.WorldOpenFlows;
-import net.minecraft.core.RegistryAccess;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.world.level.LevelSettings;
 import net.minecraft.world.level.levelgen.WorldDimensions;
 import net.minecraft.world.level.levelgen.WorldOptions;
@@ -35,7 +35,7 @@ public abstract class WorldOpenFlowsMixin {
 
     @Inject(method = "createFreshLevel", at = @At("HEAD"), cancellable = true)
     private void headmate$createFreshLevel(String levelId, LevelSettings settings, WorldOptions options,
-                                                Function<RegistryAccess, WorldDimensions> dimensions, Screen lastScreen,
+                                                Function<HolderLookup.Provider, WorldDimensions> dimensions, Screen lastScreen,
                                                 CallbackInfo ci) {
         if (WorldEntryGate.shouldIntercept()) {
             ci.cancel();

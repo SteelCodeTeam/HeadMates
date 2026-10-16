@@ -83,7 +83,7 @@ final class AlterListWidget extends ObjectSelectionList<AlterListWidget.Row> {
         public void render(GuiGraphics graphics, int index, int top, int left, int width, int height,
                            int mouseX, int mouseY, boolean hovering, float partialTick) {
             graphics.fill(left + 2, top + 2, left + 21, top + 21, 0xFF000000 | profile.color);
-            PlayerFaceRenderer.draw(graphics, AlterSkins.faceTexture(profile), left + 4, top + 4, 15);
+            PlayerFaceRenderer.draw(graphics, AlterSkins.faceTexture(profile), left + 4, top + 4, 15, true, false, -1);
             graphics.drawString(font, nameWithPronouns(profile), left + 26, top + 2, 0xFFFFFF);
             graphics.drawString(font, details.apply(profile), left + 26, top + 13, 0x808080);
         }

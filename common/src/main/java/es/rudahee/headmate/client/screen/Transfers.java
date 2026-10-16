@@ -62,7 +62,7 @@ final class Transfers {
 
     private static void toast(String key, String argument) {
         Minecraft mc = Minecraft.getInstance();
-        SystemToast.add(mc.getToasts(), SystemToast.SystemToastId.PERIODIC_NOTIFICATION,
+        SystemToast.add(mc.getToastManager(), SystemToast.SystemToastId.PERIODIC_NOTIFICATION,
                 Component.translatable("headmate.transfer.title"),
                 argument == null ? Component.translatable(key) : Component.translatable(key, argument));
     }
