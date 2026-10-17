@@ -30,7 +30,7 @@ public final class RemoteSkins {
         try {
             ResourceLocation location = ResourceLocation.fromNamespaceAndPath(HeadMate.MOD_ID,
                     "remote_skins/" + player + "_" + (counter++));
-            Minecraft.getInstance().getTextureManager().register(location, new DynamicTexture(SkinImages.decode(png)));
+            Minecraft.getInstance().getTextureManager().register(location, new DynamicTexture(location::toString, SkinImages.decode(png)));
             SKINS.put(player, new Entry(location, slim, hideCape));
         } catch (Exception e) {
             HeadMate.LOGGER.warn("Skin recibida no válida para {}", player, e);

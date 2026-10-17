@@ -50,7 +50,7 @@ public final class AlterSkins {
 
     private static ResourceLocation register(NativeImage image, String key) {
         ResourceLocation location = ResourceLocation.fromNamespaceAndPath(HeadMate.MOD_ID, "skins/" + key + "_" + (counter++));
-        Minecraft.getInstance().getTextureManager().register(location, new DynamicTexture(image));
+        Minecraft.getInstance().getTextureManager().register(location, new DynamicTexture(location::toString, image));
         return location;
     }
 

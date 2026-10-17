@@ -19,7 +19,7 @@ public final class AlterNames {
      */
     public static MutableComponent name(AlterIdentity identity, Style baseStyle) {
         Style style = baseStyle.withColor(TextColor.fromRgb(identity.color()))
-                .withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, tooltip(identity)));
+                .withHoverEvent(new HoverEvent.ShowText(tooltip(identity)));
         return Component.literal(identity.displayName()).setStyle(style);
     }
 
